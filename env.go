@@ -1,12 +1,11 @@
-package env
+package main
 
 import (
 	"os"
 )
 
-func setEnvironment()
-{
-	os.Setenv(port, 8080) //PORT OF THE SERVER
-	os.Setenv(host, "localhost") //HOST ADDRESS OF THE SERVER
-
+// Set the environment variables
+func SetEnvironment() {
+	os.Setenv("port", "8080")      //PORT OF THE SERVER
+	os.Setenv("host", "localhost") //HOST ADDRESS OF THE SERVER
 }
